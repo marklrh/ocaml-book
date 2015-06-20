@@ -1,7 +1,6 @@
 \begin{document}
 
 %% \include{cover}
-\includepdf{cover.pdf}
 \setcounter{tocdepth}{14}
 
 
@@ -10,8 +9,6 @@
 \input{preface}
 \prefacesection{Acknowledgements}
 \todo{write later}
-
-
 
 \newpage
 
@@ -22,112 +19,101 @@
 
 \newpage
 
-%% \input{toolchain/main}
-
-%% \input{svn/main}
+% moved to .org
+% \input{toolchain/main} 
+\input{svn/main}
 \input{camlp4/main}
-%% \chapter{Lexing}
-%% \include{lexing/lex}
-%% \include{ocaml-lex}
 
-%% \chapter{Parsing}
-%% \label{sec:ocamlyacc}
-%% \include{ocaml-yacc}
+\chapter{Lexing}
+\include{lexing/lex}
+\include{ocaml-lex}
 
-  
-%% \chapter{Libraries}
-%%   \include{library/format}
-%%   \include{library/ocaml-graph}
+\chapter{Parsing}
+\label{sec:ocamlyacc}
+\include{ocaml-yacc}
 
-%%   \include{library/ocamlnet}
-%%   \include{library/batteries}
-%%   \include{library/bolt}
-%%   \include{library/mikmatch}
-%%   \include{library/pa-do}
-%%   \include{library/num}
-%%   \include{library/caml-inspect}
+\chapter{Libraries}
+  \include{library/format}
+  \include{library/ocaml-graph}
+  \include{library/ocamlnet}
+  \include{library/batteries}
+  \include{library/bolt}
+  \include{library/mikmatch}
+  \include{library/pa-do}
+  \include{library/num}
+  \include{library/caml-inspect}
+  \include{library/monad}
+  \include{library/bigarrary}
+  \include{library/sexplib}
+  \include{library/bin-prot}
+  \include{library/fieldslib}
+  \include{library/variantslib}
+  \include{library/delimcc}
+  \include{library/shcaml}
+  \include{library/deriving}
+  \include{library/text}
+  \include{library/xstrp4}
 
-%%   \include{library/monad}
-%%   \include{library/bigarrary}
-%%   \include{library/sexplib}
-%%   \include{library/bin-prot}
-%%   \include{library/fieldslib}
-%%   \include{library/variantslib}
-%%   \include{library/delimcc}
-%%   \include{library/shcaml}
-%%   \include{library/deriving}
+\chapter{Modules}
+  \include{module-lang}
 
-%%   \include{library/text}
-%%   \include{library/xstrp4}
-%% \section{Modules}
-%% \include{module-lang}
+\chapter{Runtime}
+  \label{sec:runtime}
+  \include{runtime/ocamlrun}
+  \include{runtime/ffi}
 
-%% \chapter{Runtime}
-%% \label{sec:runtime}
-%% \include{runtime/ocamlrun}
-%% \include{runtime/ffi}
+\chapter{GC}
+  \todo{Should be re-written later}
+  \label{sec:gc}
+  \include{runtime/gc}
 
-%% \chapter{GC}
-%% \todo{Should be re-written later}
-%% \label{sec:gc}
-%% \include{runtime/gc}
-
-
+%% not found
 %% \chapter{Object-oriented}
-%% \include{oo/oo}
+%%   \include{oo/oo}
+%%   \todo{Write later}
 
-%% \todo{Write later}
+\chapter{Language Features}
+  \label{sec:compl-lang-feat}
+  \include{lang/stream}
+  \include{lang/gadt}
+  \include{lang/module}
+  \include{lang/phantom}
+  \include{lang/poly}
+  \include{lang/subtyping}
+  \include{lang/explicit_type}
 
-%% \chapter{Language Features}
-%% \label{sec:compl-lang-feat}
+\section{The module Language}
+  \label{sec:module-language}
+  \todo{write later}
 
-%% \include{lang/stream}
-%% \include{lang/gadt}
-%% \include{lang/module}
-%% \include{lang/phantom}
-%% \include{lang/poly}
-%% \include{lang/subtyping}
-%% \include{lang/explicit_type}
+\chapter{subtle bugs}
+  \label{sec:subtle-bugs}
+  \include{bugs/reload}
+  \include{bugs/mem}
+  \include{bugs/debug}
+  \include{bugs/debug_cheat_sheet}
 
-%% \section{The module Language}
-%% \label{sec:module-language}
-%% \todo{write later}
-
-%% \chapter{subtle bugs}
-%% \label{sec:subtle-bugs}
-%% \include{bugs/reload}
-%% \include{bugs/mem}
-%% \include{bugs/debug}
-%% \include{bugs/debug_cheat_sheet}
-
+%% not found
 %% \chapter{Interoperating With C}
-%% \label{sec:inter-with-c}
-%% \todo{Write later}
-%% \include{c/M4}
+%%   \label{sec:inter-with-c}
+%%   \todo{Write later}
+%%   \include{c/M4}
 
-%% \chapter{Pearls}
-%% \include{pearl/jones}
-%% \include{pearl/reddit}
-%% \include{pearl/godi}
-\input{compiler/main}
+\chapter{Pearls}
+  \include{pearl/jones}
+  \include{pearl/reddit}
+  \include{pearl/godi}
 
+%% moved to .org
+%% \chapter{Compiler internal}  
+%%  \input{compiler/main}
 
-%% %% \chapter{Book}
-%% %% \include{books/developing_application_with_ocaml}
-%% %% \include{books/ocaml_for_scientists}
-%% %% \include{books/caltech_ocaml}
-%% %% \include{books/the_functional_approach_to_programming}
-%% %% \include{books/practical_ocaml}
-%% %% \include{books/hol_light}
-%% %% \include{books/unix_system_programming_in_ocaml}
-%% %% \include{books/practical_ocaml}
+\chapter{Others}
+  \include{trival_tricks}
+  \include{blogs}
+  
+\chapter{Examples}
+  \include{example/unification}
+  \include{example/llvm}
 
-%% \chapter{XX}
-%% \include{trival_tricks}
-%% \include{blogs}
-%% \chapter{Topics}
-
-%% \include{example/unification}
-
-%% \include{example/llvm}
 \end{document}
